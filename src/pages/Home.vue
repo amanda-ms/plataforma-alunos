@@ -191,9 +191,17 @@ export default {
         font-weight: 500;
         font-size: 13px;
         cursor: pointer;
+        transition: 400ms;
+        &:hover {
+          background: rgb(0, 125, 202);
+        }
       }
       .excluir {
         background: #eb2a00;
+        transition: 400ms;
+        &:hover {
+          background: #b82200;
+        }
       }
     }
   }

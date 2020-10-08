@@ -3,7 +3,9 @@
     <div class="modal__content">
       <div class="modal__content__header">
         <h3>Cadastrar novo aluno</h3>
-        <button @click="close">Fechar</button>
+        <button @click="close">
+          <img src="@/assets/close.svg" />
+        </button>
       </div>
 
       <figure>
@@ -105,11 +107,16 @@ export default {
         margin: 0;
       }
       button {
-        background: rgb(167, 45, 45);
-        width: 50px;
+        background: transparent;
+        width: 30px;
         border: 0;
         outline: 0;
         height: 25px;
+        cursor: pointer;
+        img {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
     figure {
@@ -131,7 +138,7 @@ export default {
       padding: 20px 24px;
       &__input {
         padding: 15px;
-        width: calc(43% - 3px);
+        width: calc(50.5% - 5px);
         margin-bottom: 10px;
         border: 1px solid rgba(25, 25, 25, 0.32);
         outline: 0;
@@ -152,6 +159,11 @@ export default {
         background: #109cf1;
         color: #fff;
         border-radius: 4px;
+        cursor: pointer;
+        transition: 400ms;
+        &:hover {
+          background: rgb(0, 125, 202);
+        }
       }
     }
   }
